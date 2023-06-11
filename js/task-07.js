@@ -1,9 +1,8 @@
 let inputRange = document.getElementById("font-size-control");
-console.log("inputRange", inputRange);
+let spanText = document.getElementById('text');
 
-let rangeSize = Number(inputRange.value);
-console.log("rangeSize", rangeSize);
+const rangeChanging = () => {
+  spanText.style.fontSize = inputRange.value + "px";
+};
 
 inputRange.addEventListener("input", rangeChanging);
-
-const rangeChanging = () => {};
