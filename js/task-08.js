@@ -15,7 +15,8 @@ function onSubmit(event) {
     user.email = userEmail.value;
     user.password = userPassword.value;
     console.log(user);
+    event.currentTarget.reset();
   };
-  event.currentTarget.reset();
+  
 }
 
